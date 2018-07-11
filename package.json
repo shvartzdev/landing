@@ -1,0 +1,29 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "This is landing tutorial ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shvartzdev/landing.git"
+  },
+  "author": "Sergey Rubets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shvartzdev/landing/issues"
+  },
+  "homepage": "https://github.com/shvartzdev/landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {}
+}

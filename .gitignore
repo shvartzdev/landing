@@ -1,6 +1,6 @@
 .idea/
 build
-nodu_modules
+node_modules
 npm-debug.log
 .DS_Store
 
@@ -29,4 +29,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
