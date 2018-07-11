@@ -5,7 +5,11 @@
   }
 
   &__bottom {
-    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 41px 0 32px;
   }
 
 }
