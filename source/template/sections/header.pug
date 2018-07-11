@@ -1,0 +1,20 @@
+header.header
+  .header__top
+    .container
+      .contacts
+        a.contact(href="tel:+79012341231")
+          i.fa.fa-mobile(aria-hidden="true")
+          span.contact__text 6337 3128
+        a.facebook(href="mailto:info@business.co")
+          i.fa.fa0envelope.contact__icon.contact__icon--email(aria-hidden="true")
+          span.contact__text info@business.co
+
+        a.facebook-icon(href="facebook.com")
+            i.fa.fa-facebook(aria-hidden="true")
+  .container
+    .header__bottom
+      .logo: img.logo__picture(src="images/logo.png" alt="picture")
+      nav.nav
+      - var items = ['Home', 'About us', 'Our approach', 'our word']
+      each item in items
+        a.nav__link(href="#")=item
