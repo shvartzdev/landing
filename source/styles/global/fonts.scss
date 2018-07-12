@@ -21,3 +21,19 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "helvetica-neue-regular";
+  src: url("../fonts/helvetica-neue-regular.woff") format("woff"),
+  url("../fonts/helvetica-neue-regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontawesome-webfont";
+  src: url("../fonts/fontawesome-webfont.woff") format("woff"),
+  url("../fonts/fontawesome-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
