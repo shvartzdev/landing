@@ -7,7 +7,7 @@
 
 @mixin centerer-x() {
   position: absolute;
-  left: 50%;
+  right: 50%;
   transition: translateX(-50%);
 }
 
