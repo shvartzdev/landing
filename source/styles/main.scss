@@ -6,9 +6,16 @@
 @import "global/common";
 @import "global/base";
 @import "global/sprite";
+@import "global/icons";
 @import "global/button";
+@import "global/mixins";
 
+@import "sections/title";
 @import "sections/header";
 @import "sections/nav";
 @import "sections/hero";
+<<<<<<< HEAD
 @import "sections/approach";
+=======
+@import "sections/about";
+>>>>>>> bugFix
