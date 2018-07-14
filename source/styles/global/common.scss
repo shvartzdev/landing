@@ -7,3 +7,8 @@
   display: none!important;
 
 }
+
+.visually-hidden {
+  text-indent : -9999px;
+  font-size: 0;
+}
