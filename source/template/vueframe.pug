@@ -1,19 +1,31 @@
-doctype html
-html(lang='ru')
+
+html
   head   
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content="IE=edge")
     meta(name='viewport' content='width=device-width')
     link(rel="stylesheet" href="css/main.min.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
-    //- link(rel="stylesheet" href="../styles.scss")
-    script(src='js/main.min.js')
-    script(src='https://unpkg.com/vue')
-    script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
-    script(scr="js/vue.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css")
+    script(src="https://unpkg.com/vue")
     title Business
   body
-    //include vueframe
+    #app {{ message }}
+    script(src='js/main.min.js')
     include sections/header
-    include sections/upvote
-    
+    h2(class="title has-text-centered dividing-header") UpVote!   
+    .container
+      .section
+          article(class="media")
+            figure(class="media-left")
+              img.image_is-64x64(src="/Users/shvartz/Desktop/landing/source/images/submissions/image-yellow.png" alt="yellow")
+            .media-content
+              .content 
+                p <a class="has-text-info" href="#">Yellow Pail</a><span class="tag is-small">#4</span> On-demand sand castle construction expertise.
+                br
+              small(class="is-size-7") Submitted by: 
+                img.image_is-24x24(src="../images/avatars/daniel.jpg")
+            .media-right
+              span.icon.is-small
+                i.fa.fa-chevron-up
+                  strong.has-text-info 10
