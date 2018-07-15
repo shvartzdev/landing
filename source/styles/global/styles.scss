@@ -1,0 +1,57 @@
+/* Miscellaneous Styles */
+
+.dividing-header {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.media .content:not(:last-child) {
+  margin-bottom: -2rem;
+}
+
+.section {
+  padding: 2rem 1.5rem;
+}
+
+.media {
+  max-width: 600px;
+  max-height: 200px;
+  margin: 0 auto;
+  border: 1px solid #e6e7e9;
+  padding: 1em 1.5em 0.5em 1.5em;
+  border-radius: 0.3em;
+}
+
+.media + .media {
+  margin-top: 1.5rem;
+}
+
+.blue-border {
+  border: 1px solid #3373dc !important;
+}
+
+.tag {
+  font-size: 0.6rem !important;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.image_is-64x64 {
+  width: 64px;
+  height: 64px;
+  // display: inline;
+  position: relative;
+  top: 0;
+  border-radius: 20px;
+}
+
+.image_is-24x24 {
+  width: 24px;
+  height: 24px;
+  // display: inline;
+  position: relative;
+  top: 0;
+  border-radius: 10px;
+}

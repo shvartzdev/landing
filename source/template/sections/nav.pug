@@ -1,7 +1,9 @@
 nav.nav
-  - var items = ['Home', 'About us', 'Our approach', 'our word']
+  //- - var items = ['Home', 'About us', 'Our approach', 'our word']
+  - var items = [{name:"Home", url:"/"}, {name:"Vue", url: "vueframe.html"}, {name:"Catalog",url: "catalog.html"}, {name:"Contacts", url:"contact"}]
+
   each item in items
-    if item === 'Home'
-      a.nav__link.nav__link--active(href="#")=item
+    if item.name === 'Home'
+      a.nav__link.nav__link--active(href="/")=item.name
     else
-      a.nav__link(href="#")=item
+      a.nav__link(href="/"+item.url)=item.name
