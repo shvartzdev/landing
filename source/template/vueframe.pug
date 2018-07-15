@@ -10,22 +10,26 @@ html
     script(src="https://unpkg.com/vue")
     title Business
   body
-    #app {{ message }}
-    script(src='js/main.min.js')
     include sections/header
     h2(class="title has-text-centered dividing-header") UpVote!   
     .container
+    #app
+
+
       .section
-          article(class="media")
+          article(v-for="s in sub" v-bind:key="sub.id" class="media")
             figure(class="media-left")
-              img.image_is-64x64(src="/Users/shvartz/Desktop/landing/source/images/submissions/image-yellow.png" alt="yellow")
+              img.image_is-64x64(v-bind:src="s.submissionImage" alt="yellow")
             .media-content
               .content 
-                p <a class="has-text-info" href="#">Yellow Pail</a><span class="tag is-small">#4</span> On-demand sand castle construction expertise.
+                #app 
+                  p <a class="has-text-info" v-bind:href="s.url">{{ s.title }} {{ s.url }}</a><span class="tag is-small"># {{s.id}}</span> {{s.description}}
                 br
+              #app
               small(class="is-size-7") Submitted by: 
-                img.image_is-24x24(src="../images/avatars/daniel.jpg")
+                img.image_is-24x24(v-bind:src="s.avatar")
             .media-right
               span.icon.is-small
                 i.fa.fa-chevron-up
-                  strong.has-text-info 10
+                  <strong class="has-text-info">{{ s.votes }}</strong>
+    script(src='js/main.min.js')
