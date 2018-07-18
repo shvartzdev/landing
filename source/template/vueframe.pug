@@ -29,7 +29,7 @@ html
               small(class="is-size-7") Submitted by: 
                 img.image_is-24x24(v-bind:src="s.avatar")
             .media-right
-              span.icon.is-small
+              span.icon.is-small(@click="upvote(s.id)")
                 i.fa.fa-chevron-up
                   <strong class="has-text-info">{{ s.votes }}</strong>
     script(src='js/main.min.js')

@@ -9,8 +9,8 @@
             description: 'On-demand sand castle construction expertise.',
             url: '#',
             votes: 16,
-            avatar: '../images/avatars/daniel.jpg',
-            submissionImage: '../images/submissions/image-yellow.png',
+            avatar: '/images/avatars/daniel.jpg',
+            submissionImage: '/images/submissions/image-yellow.png',
           },
           {
             id: 2,
@@ -18,8 +18,8 @@
             description: 'Earn points when your favorite politicians pass legislation.',
             url: '#',
             votes: 11,
-            avatar: '../images/avatars/kristy.png',
-            submissionImage: '../images/submissions/image-rose.png',
+            avatar: '/images/avatars/kristy.png',
+            submissionImage: '/images/submissions/image-rose.png',
           },
           {
             id: 3,
@@ -27,8 +27,8 @@
             description: 'We have your measurements and shipping address.',
             url: '#',
             votes: 17,
-            avatar: '../images/avatars/veronika.jpg',
-            submissionImage: '../images/submissions/image-steel.png',
+            avatar: '/images/avatars/veronika.jpg',
+            submissionImage: '/images/submissions/image-steel.png',
           },
           {
             id: 4,
@@ -36,17 +36,28 @@
             description: 'High-minded or absent-minded? You decide.',
             url: '#',
             votes: 9,
-            avatar: '../images/avatars/molly.png',
-            submissionImage: '../images/submissions/image-aqua.png',
+            avatar: '/images/avatars/molly.png',
+            submissionImage: '/images/submissions/image-aqua.png',
           }
         ]
       }
-      // methods: {
-      //   upvote(subId) {
-      //     const submission = this.sub.find(
-      //       submission => submission.id === subId
-      //     );
-      //     submission.votes++;
-      //   }
-      // }
-  });
+      ,
+      computed: {
+        sortedSubmissions: function() {
+          console.log('before sorting')
+          // return 
+          // this.sub.sort((a,b)=>{
+          //   return b.votes-a.votes
+          // })
+        }
+      },
+      methods: {
+        upvote: function(subId) {
+          // var submission = this.sub.find(
+          //   submission === subId
+          // );
+          // submission.votes++;
+        }
+      }
+      
+    })

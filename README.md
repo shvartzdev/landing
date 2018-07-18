@@ -1,26 +1,30 @@
-# Практический курс верстки по уроку itvdn
-## перед стартом проекта необхоимо:
+# landing
 
-* убедиться в том, что следующие команды работают: 
+> A Vue.js project
 
-> node -v
+## Build Setup
 
-если вы видите версию, то все ок
+``` bash
+# install dependencies
+npm install
 
-> npm -v
+# serve with hot reload at localhost:8080
+npm run dev
 
-npm идёт, как правило, вместе с node 
+# build for production with minification
+npm run build
 
-* убедиться, что gulp 4 версии или скачать, если его нет
+# build for production and view the bundle analyzer report
+npm run build --report
 
-> gulp -v
+# run unit tests
+npm run unit
 
-### Чтобы клонировать репозиторий: 
+# run e2e tests
+npm run e2e
 
-> git clone https://github.com/shvartzdev/landing.git
+# run all tests
+npm test
+```
 
-Следующая команда автоматически скачает пакеты, описанные в package.json
-
-> npm install
-
-После выполнения всех перечисленных действий проект готов к запуску.
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
